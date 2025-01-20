@@ -1,0 +1,191 @@
+html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../assets/images/back1.jpg);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    color: white;
+    padding: 0 20px; /* Espaciado horizontal */
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.25rem;
+    color: #7a46f3; /* Color para el subtítulo */
+    font-weight: 300;
+    white-space: nowrap; /* Evita que el texto se desborde */
+    overflow: hidden; /* Oculta el texto que no se ha "escrito" aún */
+    border-right: 2px solid white; /* Cursor parpadeante */
+    animation: blink 0.5s step-end infinite; /* Cursor parpadeante */
+}
+
+/* Animación para el cursor parpadeante */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    padding: 20px;
+    text-align: center; /* Alinea el texto al centro */
+    background-color: #06031a70;
+}
+
+main h3 {
+    color: rgb(89, 0, 255); /* Color base */
+    margin-bottom: 30px; /* Espacio entre el título y la card */
+    font-size: 2.0rem; /* Tamaño de fuente más grande para mayor impacto */
+    font-weight: bold; /* Mantiene el texto grueso */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 0.7rem; /* Espaciado reducido para mejor legibilidad */
+    background: linear-gradient(90deg, #5900ff, #00d4ff); /* Degradado */
+    background-clip: text; /* Propiedad estándar */
+    -webkit-background-clip: text; /* Clip para aplicar el degradado solo al texto */
+    -webkit-text-fill-color: transparent; /* Hace el fondo del texto transparente */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.vinculo-proyecto {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centra la card */
+    color: white;
+    background-color: transparent;
+    border-radius: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    text-align: left; /* Alinea el texto dentro de la card a la izquierda */
+}
+
+.widthTec {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Para darle bordes redondeados */
+}
+
+.tecnologias-img {
+    max-width: 50px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para sombra también */
+    will-change: transform; /* Mejora el rendimiento */
+}
+
+.tecnologias-img:hover {
+    transform: scale(1.5); /* Escala la imagen al 120% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más suave y difusa */
+    border-radius: 10px; /* Borde redondeado al hacer hover */
+}
+
+
+main h4 {
+    color: rgb(89, 0, 255); /* Color de texto */
+    font-weight: bold; /* Hace el texto más grueso */
+}
+
+.sobreMi {
+    color: white;
+}
+
+.highlight {
+    color: #86d3ff; /* Color destacado */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s ease-in-out; /* Transición suave al pasar el mouse */
+}
+
+.highlight:hover {
+    color: #ff6f61; /* Cambia de color al pasar el mouse */
+}
+
+
+/* Contenedor de los íconos */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Espacio entre los íconos */
+}
+
+/* Estilo para cada ícono */
+.footer-icon {
+    width: 50px; /* Ajusta el tamaño de los íconos */
+    height: 50px; /* Ajusta la altura para que sea cuadrada y se pueda hacer redonda */
+    object-fit: cover; /* Asegura que la imagen se recorte bien si es rectangular */
+    border-radius: 50%; /* Hace que los íconos sean redondos */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto hover para los íconos */
+.footer-icon:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+    opacity: 0.8; /* Ligera opacidad cuando pasa el mouse */
+}
+
+/* Asegura que los íconos sean visibles y se alineen bien en pantallas pequeñas */
+@media (640px <= width < 768px) {
+    .footer-icons {
+        flex-direction: column;
+        gap: 10px; /* Reduce el espacio entre los íconos en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 960px;
+    }
+}
