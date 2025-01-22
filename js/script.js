@@ -1,5 +1,5 @@
 // Manejo del Scroll
-let scrollTriggered = false;
+/* let scrollTriggered = false;
 
 function handleScroll() {
     const element = document.getElementById('proyectos');
@@ -16,7 +16,7 @@ function handleScroll() {
     }
 }
 
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', handleScroll); */
 
 // Animación de Escritura
 const text = "Backend Developer - Ciberseguridad";

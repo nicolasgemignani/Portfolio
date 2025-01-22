@@ -7,6 +7,7 @@ html {
 body {
     background-image: url(../assets/images/back1.jpg);
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -26,6 +27,7 @@ header img {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
+    box-shadow: 0 0 20px 5px rgb(51, 140, 182);
 }
 
 header h1 {
@@ -57,7 +59,6 @@ main {
     justify-content: center; /* Centra el contenido verticalmente */
     padding: 20px;
     text-align: center; /* Alinea el texto al centro */
-    background-color: #06031a70;
 }
 
 main h3 {
@@ -89,6 +90,7 @@ main h3 {
     background-color: transparent;
     border-radius: 0;
     transition: transform 0.3s ease, color 0.3s ease;
+    border: 0;
 }
 
 .card:hover {
@@ -99,32 +101,55 @@ main h3 {
     text-align: left; /* Alinea el texto dentro de la card a la izquierda */
 }
 
-.widthTec {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+.lista-tecnologias {
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0; /* Opcional: Elimina el espacio inicial de la lista */
 }
 
-.tech-img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border-radius: 50%; /* Para darle bordes redondeados */
+.textoTecCard {
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 5px; /* Espaciado entre elementos */
+    color:#ffffff;
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita */
 }
 
-.tecnologias-img {
-    max-width: 50px;
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para sombra también */
-    will-change: transform; /* Mejora el rendimiento */
+/* Estilo específico para Python */
+.python {
+    background: linear-gradient(90deg, #306998, #FFD43B); /* Degradado azul y amarillo */
 }
 
-.tecnologias-img:hover {
-    transform: scale(1.5); /* Escala la imagen al 120% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más suave y difusa */
-    border-radius: 10px; /* Borde redondeado al hacer hover */
+/* Estilo específico para MySQL */
+.mysql {
+    background: linear-gradient(90deg, #00758F, #F29111); /* Degradado azul y naranja */
+}
+
+/* Estilo específico para JavaScript */
+.javascript {
+    background: linear-gradient(90deg, #F7DF1E, #323330); /* Degradado amarillo y gris oscuro */
+}
+
+/* Estilo específico para Bootstrap */
+.bootstrap {
+    background: linear-gradient(90deg, #563D7C, #7952B3); /* Degradado púrpura */
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los íconos */
+}
+
+.tech-icon {
+    font-size: 50px; /* Tamaño de los íconos */
+    color: #333; /* Color de los íconos */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.tech-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el cursor */
+    color: #007bff; /* Cambia el color del ícono al pasar el cursor */
 }
 
 

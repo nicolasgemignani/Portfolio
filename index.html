@@ -7,22 +7,27 @@
     <title>Portafolio de Nicolás Gemignani</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />     
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="assets/images/mia.png" alt="Mi Foto">
-        <h1><strong>Nicolas Alejandro Gemignani</strong></h1>
-        <h2 id="animated-text"></h2>
+        <h1 class="mt-3"><strong>Nicolas Alejandro Gemignani</strong></h1>
+        <h2 id="animated-text" class="mt-3"></h2>
     </header>
-    <main id="proyectos" class="pt-5">
-        <h3 class="p-1 scroll-link mb-5">PROYECTOS</h3>
+    <main class="pt-5">
+        <h3 class="p-1 mb-5">PROYECTOS</h3>
         <a href="https://www.canva.com/design/DAGYzklU51s/494hJY2JdbPPLe6daOxI5A/view?utm_content=DAGYzklU51s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05ee4299b6" class="vinculo-proyecto">
             <div class="card mb-3 pt-3 border-bottom" style="max-width: 600px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <div class="card-body">
                             <h5 class="card-title"><strong>Lengua V1V4</strong></h5>
-                            <p class="card-text">Sistema de Psicometría Textual evalua la habilidad de redacción breve de sujetos </p>
+                            <p class="card-text textoTecCard">Sistema de Psicometría Textual evalua la habilidad de redacción breve de sujetos </p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -30,20 +35,39 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card-body">
-                            <h5 class="card-title"><strong>Utilizando</strong></h5>
-                            <ul>
-                                <li>
-                                    Python, Django
-                                </li>
-                                <li>
-                                    MySQL Workbench
-                                </li>
-                                <li>
-                                    JavaScript y Css
-                                </li>
-                                <li>
-                                    Bootstrap
-                                </li>
+                            <ul class="lista-tecnologias text-center">
+                                <li class="textoTecCard python mb-3">Python, Django</li>
+                                <li class="textoTecCard mysql mb-3">MySQL Workbench</li>
+                                <li class="textoTecCard javascript mb-3">JavaScript y CSS</li>
+                                <li class="textoTecCard bootstrap mb-3">Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p>Por cuestiones de seguridad no puedo mostrar el sistema, pero pueden ver una guia</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.canva.com/design/DAGYzklU51s/494hJY2JdbPPLe6daOxI5A/view?utm_content=DAGYzklU51s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05ee4299b6" class="vinculo-proyecto mt-5">
+            <div class="card mb-3 pt-3 border-bottom" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Lengua V1V4</strong></h5>
+                            <p class="card-text textoTecCard">Sistema de Psicometría Textual evalua la habilidad de redacción breve de sujetos </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/Lingua.png" class="img-fluid rounded pt-1" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <ul class="lista-tecnologias text-center">
+                                <li class="textoTecCard python mb-3">Python, Django</li>
+                                <li class="textoTecCard mysql mb-3">MySQL Workbench</li>
+                                <li class="textoTecCard javascript mb-3">JavaScript y CSS</li>
+                                <li class="textoTecCard bootstrap mb-3">Bootstrap</li>
                             </ul>
                         </div>
                     </div>
@@ -54,87 +78,79 @@
             </div>
         </a>
         <section class="container my-5">
-            <h3 class="text-center mt-4 mb-5">TECNOLOGIAS</h3>
-            <div class="row g-3 mb-5 mt-5">
-                <!-- Fila de 5 imágenes -->
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/Js.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="JavaScript">
+            <h3 class="text-center mt-5 mb-5">TECNOLOGÍAS</h3>
+            <div class="row tech-icons">
+                <!-- Lenguajes -->
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-python-plain tech-icon"></i>
                 </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/python.jpg" class="img-fluid rounded shadow-lg tecnologias-img" alt="Python">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-javascript-plain tech-icon"></i>
                 </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/mysqlworkbench.jpg" class="img-fluid rounded shadow-lg tecnologias-img" alt="MySQL Workbench">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-html5-plain tech-icon"></i>
                 </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/mongo.jpg" class="img-fluid rounded shadow-lg tecnologias-img" alt="MongoDB">
-                </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/sqlite.jpg" class="img-fluid rounded shadow-lg tecnologias-img" alt="SQLite">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-css3-plain tech-icon"></i>
                 </div>
         
-                <!-- Fila de 4 imágenes -->
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/Django.jpg" class="img-fluid rounded shadow-lg tecnologias-img" alt="Django">
+                <!-- Bases de datos -->
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-mysql-original tech-icon"></i>
                 </div>
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/bootstrap.jpg" class="img-fluid rounded shadow-lg tecnologias-img" alt="Bootstrap">
-                </div>
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/handlebars.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="Handlebars">
-                </div>
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/docker.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="Docker">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-mongodb-plain tech-icon"></i>
                 </div>
         
-                <!-- Fila de 5 imágenes -->
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/aws.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="AWS">
+                <!-- Frameworks -->
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-django-plain tech-icon"></i>
                 </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/postman.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="Postman">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-express-original tech-icon"></i>
                 </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/nodexpress.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="Node.js">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-nestjs-original tech-icon"></i>
                 </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/css.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="CSS">
-                </div>
-                <div class="col-2">
-                    <img src="assets/images/tecnologias/sass.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="SCSS">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-bootstrap-plain tech-icon"></i>
                 </div>
         
-                <!-- Fila de 4 imágenes -->
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/nestjs.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="NestJS">
+                <!-- Otras herramientas -->
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-postman-plain tech-icon"></i>
                 </div>
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/oracle.jpg" class="img-fluid rounded shadow-lg tecnologias-img" alt="Oracle VM">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-amazonwebservices-plain-wordmark tech-icon"></i>
                 </div>
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/kali.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="Kali Linux">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-kubernetes-plain tech-icon"></i>
                 </div>
-                <div class="col-3">
-                    <img src="assets/images/tecnologias/wireshark.png" class="img-fluid rounded shadow-lg tecnologias-img" alt="Wireshark">
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-swagger-plain tech-icon"></i>
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <i class="devicon-docker-plain tech-icon"></i>
                 </div>
             </div>
         </section>
         <section id="sobre-mi" class="container my-5 sobreMi mb-5">
-            <h4 class="text-center mb-4">Sobre mí</h4>
+            <h3 class="text-center mt-5 mb-4">SOBRE MI</h3>
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
                     <p class="text-center">
-                        Mi camino profesional comenzó a una edad temprana. A los 17 años, en 2016, empecé a trabajar en una fábrica, mientras terminaba mis estudios en un colegio técnico, lo que me permitió adquirir valiosas experiencias laborales. Tras completar el secundario en 2017, decidí concentrarme plenamente en mi trabajo durante los siguientes seis años.
+                        En 2023, decidí dar un giro a mi vida y comenzar a estudiar programación. Inicié mis estudios en paralelo con mi trabajo, y <strong class="highlight">en 2024, tomé la decisión de enfocarme completamente en el desarrollo de software</strong>, concluyendo también mi educación secundaria.
                     </p>
                     <p class="text-center">
-                        Sin embargo, en 2023, decidí dar un giro a mi vida y comenzar a estudiar programación. Inicié mis estudios en paralelo con mi trabajo, y <strong class="highlight">en 2024, tomé la decisión de enfocarme completamente en el desarrollo de software</strong>, concluyendo también mi educación secundaria.
-                    </p>
-                    <p class="text-center">
-                        En noviembre de 2024, logré conseguir una pasantía de dos meses, donde pude aplicar la mitad de los conocimientos adquiridos durante mi formación. Ahora, al finalizar este ciclo, me encuentro en busca de nuevos desafíos que me permitan seguir creciendo y perfeccionando mis habilidades en el mundo de la programación.
+                        En noviembre de 2024, conseguí una pasantía de dos meses que me permitió aplicar y expandir mis conocimientos adquiridos durante mi formación. Al finalizar este ciclo, me encuentro motivado y en busca de nuevos desafíos que me ayuden a seguir creciendo y perfeccionando mis habilidades en el mundo de la programación.
                     </p>
                 </div>
-            </div>            
-            <div class="footer-icons mt-3">
+            </div>
+        </section>        
+    </main>
+    <footer class="pb-4">
+        <section">
+            <div class="footer-icons">
                 <a href="https://www.linkedin.com/in/nicolas-gemignani-ab7710205/" target="_blank">
                     <img src="./assets/images/linkedin.png" alt="Linkedin" class="footer-icon">
                 </a>
@@ -145,8 +161,8 @@
                     <img src="./assets/images/Curriculum.png" alt="Curriculum-Vitae" class="footer-icon">
                 </a>
             </div>
-        </section>        
-    </main>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
